@@ -19,7 +19,6 @@ class comision:
             self.transporte-=self.valorboleto
         print(f"El dinero anual de pasajes de transporte $ {self.DineroTotaltrans:,.0f} le alcanza para {boletostranspor:,.0f} boletos para pasajes 🤑")
             
-        
     def entradascine(self):
         boletoscine=0
         self.cine=int(self.SumaAnual*0.2)
@@ -32,32 +31,22 @@ class comision:
     def madres(self):
         self.sobrante=self.SumaAnual-self.libros-self.DineroTotaltrans-self.DineroTotalcine
         print(f"El dinero restante para el regalo del dia de las madres es $ {self.sobrante:,.0f} 🤑")
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     def cambiovalor(self):
         self.valorboleto=int(input("Agrege el nuevo valor del pasaje del transporte 🤑: "))
         self.valorentradacine=int(input("Agrege el nuevo valor del para la entrada de cine 🤑: "))
         sobrino.transporteU()
         sobrino.entradascine()
         
-        
+    def DineroTotal(self):
+        años = int(input("Años que estuvo el sobrino: "))
+        self.DineroRecibido = self.SumaAnual * años
+        print(f"El sobrino estudio {años} años y recibio un total de $ {self.DineroRecibido:,.0f}")
+
 sobrino=comision(DineroAnual)
 sobrino.libro()
 sobrino.transporteU()
 sobrino.entradascine()
 sobrino.madres()
 sobrino.cambiovalor()    
+sobrino.DineroTotal() 
