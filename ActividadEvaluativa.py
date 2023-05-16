@@ -33,6 +33,21 @@ class comision:
         self.sobrante=self.SumaAnual-self.libros-self.DineroTotaltrans-self.DineroTotalcine
         print(f"El dinero restante para el regalo del dia de las madres es $ {self.sobrante:,.0f} 🤑")
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     def cambiovalor(self):
         self.valorboleto=int(input("Agrege el nuevo valor del pasaje del transporte 🤑: "))
         self.valorentradacine=int(input("Agrege el nuevo valor del para la entrada de cine 🤑: "))
