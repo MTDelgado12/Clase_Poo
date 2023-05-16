@@ -31,8 +31,14 @@ class comision:
         self.sobrante=self.SumaAnual-self.libros-self.DineroTotaltrans-self.DineroTotalcine
         print(f"El dinero restante para el regalo del dia de las madres es $ {self.sobrante:,.0f} 🤑")
         
+    def DineroTotal(self):
+        años = int(input("Años que estuvo el sobrino: "))
+        self.DineroRecibido = self.SumaAnual * años
+        print(f"El sobrino estudio {años} años y recibio un total de $ {self.DineroRecibido:,.0f}")
+
 sobrino=comision(DineroAnual)
 sobrino.libro()
 sobrino.transporteU()
 sobrino.entradascine()
-sobrino.madres()      
+sobrino.madres()
+sobrino.DineroTotal() 
